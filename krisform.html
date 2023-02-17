@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form_kris.css">
+    <title>Document</title>
+</head>
+<body>
+ <main>
+    <p>Hos Slikfix gør vi altid vores bedste for at sørge for, at du finder et bredt udvalg af bland-selv-slik. Skulle du have en favorit, du ikke finder på vores side, så udfyld formularen nedenfor - og vi vil gøre det bedste for, at få det tilføjet til udvalget, så din slikpose kan blive endnu bedre.</p>
+    <form>
+        <label for="slik-navn">Navnet på slik</label>
+        <input 
+        id="slik-navn"
+        name="sname"
+        type="text">
+
+        <label for="slik-brand">Brand på slik</label>
+        <input 
+        id="slik-brand" 
+        name="sbrand" 
+        type="text">
+
+        <!-- <label for="slik-type">Type slik</label>
+        <input id="slik-type" 
+        name="stype" 
+        type="radio"> -->
+
+        <fieldset>
+            <legend>Vælg type</legend>
+        
+            <input type="radio" id="chokolade" name="kategori" value="chokolade">
+            <label for="chokolade">Chokolade</label><br>
+        
+            <input type="radio" id="vingummi" name="kategori" value="vingummi">
+            <label for="vingummi">Vingummi</label><br>
+        
+            <input type="radio" id="lakrids" name="kategori" value="lakrids">
+            <label for="lakrids">Lakrids</label><br>
+
+            <input type="radio" id="skum" name="kategori" value="skum">
+            <label for="skum">Skum</label><br>
+
+            <input type="radio" id="karamel" name="kategori" value="karamel">
+            <label for="karamel">Karamel</label><br>
+
+            <input type="radio" id="surt" name="kategori" value="surt">
+            <label for="surt">Surt</label><br />
+        </fieldset>
+<br>
+        <button>Indsend</button>
+    </form>
+ </main>   
+</body>
+</html>
