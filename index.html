@@ -5,18 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Slikfix</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <template class="categories">
-      <h2>hej</h2>
-      <p>ny test fra anden branch</p>
-      <a href="productlist.html" class="category_link">click here</a>
+    <header>
+      <!--Her skal der være et logo og en kurv-->
+      <p>hej</p>
+    </header>
+    <main>
+      <!--Her vises kategorierne-->
+      <section id="categori_section">
+        <div id="categories">
+          <a href="index.html"><h2>Vingummier</h2></a>
+          <a href="index.html"><h2>Surt slik</h2></a>
+          <a href="index.html"><h2>Chokolade</h2></a>
+          <a href="index.html"><h2>Karamel</h2></a>
+          <a href="index.html"><h2>Lakrids</h2></a>
+          <a href="index.html"><h2>Skum</h2></a>
+        </div>
+      </section>
+
+      <div id="welcome_img">
+        <!-- her er velkomstbilledet -->
+      </div>
+
+      <section id="products">
+        <div>
+          <p>produkt</p>
+          <a href="">læs mere her</a>
+        </div>
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <section id="readmore">
+        <div><p>indhold</p></div>
+        <!--Her skal slikindholds-vinduet dukke op ved klik på læs mere-->
+      </section>
+    </main>
+
+    <template id="candy_content">
+      <div class="content_window">
+        <!--her er den template hvor slikindholds-vinduet bliver lavet i-->
+      </div>
     </template>
-    <footer></footer>
+
+    <template id="candy_product">
+      <div class="candy_card">
+        <!--her er den template hvor slik card bliver lavet i-->
+      </div>
+    </template>
+
+    <footer>
+      <!--footer indhold??-->
+    </footer>
     <script src="js/index.js"></script>
   </body>
 </html>

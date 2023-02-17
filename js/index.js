@@ -1,35 +1,21 @@
-fetch("https://blandselvslik-8d50.restdb.io/rest/blandselvslik", {
-  method: "get",
-  headers: {
-    "x-apikey": "63ecc171478852088da682f2",
-  },
-})
-  .then((e) => e.json())
-  .then(showCategories);
+window.addEventListener("load", slikfixVelkommen);
 
-// function doSomething(data) {
-//   console.log(data);
-// }
+function slikfixVelkommen() {
+  console.log("slikfixVelkommen");
 
-function showCategories(candies) {
-  console.log(candies);
-  //looper og kalder showProduct
-  candies.forEach(showCategory);
+  // document.querySelector("header").classList.add("hide");
+  document.querySelector("#categori_section").classList.add("hide");
+  document.querySelector("#products").classList.add("hide");
+  document.querySelector("#readmore").classList.add("hide");
+
+  document.querySelector("#welcome_img").classList.add("zoom_out");
+
+  document.querySelector("#welcome_img").addEventListener("animationend", produktSiden);
 }
 
-function showCategory(candy) {
-  console.log("hallo?");
-  //fang template
-  const template = document.querySelector(".categories").content;
-  //lav en kopi
-  const clone = template.cloneNode(true);
-  //ændre indhold
-  clone.querySelector("h2").textContent = candy.category;
-
-  clone.querySelector(".category_link").href = `productlist.html?category=${candy.category}`;
-
-  //appende
-  document.querySelector("main").appendChild(clone);
+function produktSiden() {
+  console.log("produktSiden");
+  document.querySelector("#welcome_img").classList.add("hide");
 }
 
 //https://blandselvslik-8d50.restdb.io/rest/blandselvslik?h={%22$fields%22:{%22category%22:1}}
