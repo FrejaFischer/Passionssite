@@ -3,7 +3,7 @@ window.addEventListener("load", slikfixVelkommen);
 function slikfixVelkommen() {
   console.log("slikfixVelkommen");
 
-  // document.querySelector("header").classList.add("hide");
+  document.querySelector("header").classList.add("hide");
   document.querySelector("#categori_section").classList.add("hide");
   document.querySelector("#products").classList.add("hide");
   document.querySelector("#readmore").classList.add("hide");
@@ -22,8 +22,11 @@ function slikfixVelkommen() {
 
 function fetchProducts() {
   document.querySelector("#welcome_img").classList.add("hide");
+  document.querySelector("header").classList.remove("hide");
   document.querySelector("#categori_section").classList.remove("hide");
   document.querySelector("#categori_section").classList.add("appear");
+
+  // document.querySelector("#categori_section").classList.add("appear");
 
   fetch("https://blandselvslik-8d50.restdb.io/rest/blandselvslik", {
     method: "get",

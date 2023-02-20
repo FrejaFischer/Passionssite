@@ -4,23 +4,32 @@ body {
   background-color: #ffbfc0;
 }
 
+/* Logo */
+header img {
+  height: 100px;
+}
+
 /* Categories */
 #categories {
   display: flex;
   justify-content: space-between;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 50px;
 }
 
 /* velkommen image*/
 #welcome_img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   background-image: url("../img/slikfix_topscroll.webp");
   background-size: cover;
+  left: 0px;
+  top: 0px;
 }
 
+/* candy card */
 .candy_img {
   width: 102%;
   height: 192px;
@@ -81,7 +90,7 @@ body {
 }
 .candy_card button:hover {
   color: #ffbfc0;
-  background-image: url("../img/putikurv.png");
+  background-image: url("../img/putikurv-TEST.png");
   background-size: cover;
   height: 77px;
 }
