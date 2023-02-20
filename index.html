@@ -17,12 +17,12 @@
       <!--Her vises kategorierne-->
       <section id="categori_section">
         <div id="categories">
-          <a href="index.html"><h2>Vingummier</h2></a>
-          <a href="index.html"><h2>Surt slik</h2></a>
-          <a href="index.html"><h2>Chokolade</h2></a>
-          <a href="index.html"><h2>Karamel</h2></a>
-          <a href="index.html"><h2>Lakrids</h2></a>
-          <a href="index.html"><h2>Skum</h2></a>
+          <h2 data-category="vingummier">Vingummier</h2>
+          <h2 data-category="surt">Surt slik</h2></a>
+          <h2 data-category="chokolade">Chokolade</h2></a>
+          <h2 data-category="karamel">Karamel</h2></a>
+          <h2 data-category="lakrids">Lakrids</h2></a>
+          <h2 data-category="skum">Skum</h2></a>
         </div>
       </section>
 
@@ -31,10 +31,9 @@
       </div>
 
       <section id="products">
-        <div>
-          <p>produkt</p>
-          <a href="">læs mere her</a>
-        </div>
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <section id="products2">
         <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
       </section>
       <section id="readmore">
@@ -52,6 +51,14 @@
     <template id="candy_product">
       <div class="candy_card">
         <!--her er den template hvor slik card bliver lavet i-->
+        <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+        <p class="price">
+          35g / 10 stk. <br />
+          6,- DKK
+        </p>
+        <h2>name</h2>
+        <button>Put i posen</button>
+        <p class="more_here">Læs mere her</p>
       </div>
     </template>
 

@@ -21,6 +21,90 @@ body {
   background-size: cover;
 }
 
+.candy_img {
+  width: 102%;
+  height: 192px;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  left: 0%;
+  bottom: 24%;
+  border-radius: 100px;
+  grid-row: 1/4;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.price {
+  background-color: #ffbfc0;
+  border-radius: 46px;
+  width: 90px;
+  height: 60px;
+  text-align: center;
+  text-justify: distribute;
+  justify-self: center;
+  margin-top: -30px;
+  margin-bottom: 2px;
+  padding-top: 25px;
+  grid-row: 4/6;
+  justify-self: flex-start;
+  z-index: 1;
+}
+
+/* .candy_card {
+  background-image: url("../img/candycard_TEST.png");
+  position: relative;
+  background-size: cover;
+  width: 50%;
+  margin: 70px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+} */
+
+.candy_card {
+  background-color: #db4d5a;
+  height: 300px;
+  width: 215px;
+  margin: 52px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.candy_card button {
+  background-color: #ffbfc0;
+  grid-row: 7/8;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#products2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.candy_card h2 {
+  font-size: 1em;
+  grid-row: 6/7;
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.candy_card h3 {
+  font-size: 1em;
+}
+
+.more_here {
+  grid-row: 8/9;
+  justify-self: end;
+  margin-right: 10px;
+}
+
 /* -------Animationer------------ */
 .zoom_out {
   animation-name: zoom_out;
@@ -44,4 +128,19 @@ body {
 
 .hide {
   display: none;
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100px;
+  }
 }
