@@ -54,6 +54,12 @@ function showProduct(product) {
   document.querySelector("#products").appendChild(copy);
 
   document.querySelector("#products").classList.remove("hide");
+
+  // document.querySelectorAll(".plus_minus").forEach(hidePlus);
+  // function hidePlus(hide) {
+  //   hide.classList.add("hide");
+  // }
+
   document.querySelector("#products").classList.add("appear");
 }
 

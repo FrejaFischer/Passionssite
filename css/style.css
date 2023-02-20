@@ -77,6 +77,13 @@ body {
   grid-row: 7/8;
   margin-left: 10px;
   margin-right: 10px;
+  height: 77px;
+}
+.candy_card button:hover {
+  color: #ffbfc0;
+  background-image: url("../img/putikurv.png");
+  background-size: cover;
+  height: 77px;
 }
 
 #products {
@@ -97,6 +104,16 @@ body {
 
 .candy_card h3 {
   font-size: 1em;
+}
+
+.plus_minus {
+  z-index: 1;
+  /* top: -54px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-self: center;
+  width: 91%;
+  position: relative;
 }
 
 .more_here {
