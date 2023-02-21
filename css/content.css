@@ -1,0 +1,93 @@
+body {
+  background-color: #ffbfc0;
+}
+
+#readmore {
+  display: grid;
+  justify-content: center;
+}
+
+/* Logo */
+header img {
+  height: 100px;
+}
+/* -------Content window--------------- */
+.content_window {
+  background-color: #ee3e55;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr 12fr;
+  width: 30%;
+  justify-self: center;
+}
+
+.candy_img {
+  width: 50%;
+  height: 192px;
+  justify-self: center;
+  border-radius: 100px;
+  grid-row: 1/2;
+  margin-top: 5px;
+  grid-column: 1/3;
+}
+
+.content_window h2 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  justify-self: center;
+}
+.content_window h3 {
+  color: white;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  justify-self: center;
+}
+.content_window li {
+  color: white;
+  text-decoration: none;
+}
+
+.content_window ol {
+  list-style: none;
+  grid-column: 1/3;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.overskrift {
+  grid-column: 1/2;
+  align-self: center;
+}
+
+.indholdcenter {
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+
+.indhold {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
+
+/* -------animationer--------------- */
+.appear {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100px;
+  }
+}

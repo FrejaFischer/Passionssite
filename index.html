@@ -36,15 +36,34 @@
       <section id="products2">
         <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
       </section>
-      <section id="readmore">
-        <div><p>indhold</p></div>
-        <!--Her skal slikindholds-vinduet dukke op ved klik på læs mere-->
-      </section>
+      <!-- <section id="readmore"> -->
+      <!--Her skal slikindholds-vinduet dukke op ved klik på læs mere-->
+      <!-- </section> -->
     </main>
 
     <template id="candy_content">
       <div class="content_window">
         <!--her er den template hvor slikindholds-vinduet bliver lavet i-->
+        <h2>name</h2>
+        <h3>brandname</h3>
+        <ol>
+          <li><h4>Næringsværdi pr. 100g</h4></li>
+          <li><p class="content">content</p></li>
+          <li><h4>Energi</h4></li>
+          <li><p class="energy">energy</p></li>
+          <li><h4>Fedt</h4></li>
+          <li><p class="fat">fat</p></li>
+          <li><p>- Heraf mættet</p></li>
+          <li><p class="saturated">saturated fat</p></li>
+          <li><h4>Kulhydrat</h4></li>
+          <li><p class="carbohydrate">carbohydrate</p></li>
+          <li><p>- Heraf sukkerarter</p></li>
+          <li><p class="sugars">sugars</p></li>
+          <li><h4>Protein</h4></li>
+          <li><p class="protein">protein</p></li>
+          <li><h4>Salt</h4></li>
+          <li><p class="salt">salt</p></li>
+        </ol>
       </div>
     </template>
 
@@ -59,7 +78,7 @@
         <h2>name</h2>
         <button class="add_button">PUT I POSEN</button>
         <!-- <img src="img/putikurv.png" alt="plus minus" class="plus_minus"> -->
-        <button class="more_here">Læs mere her</button>
+        <a class="more_here" href="product.html">Læs mere her</a>
       </div>
     </template>
 

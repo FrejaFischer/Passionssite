@@ -6,7 +6,7 @@ function slikfixVelkommen() {
   document.querySelector("header").classList.add("hide");
   document.querySelector("#categori_section").classList.add("hide");
   document.querySelector("#products").classList.add("hide");
-  document.querySelector("#readmore").classList.add("hide");
+  // document.querySelector("#readmore").classList.add("hide");
   document.querySelector("footer").classList.add("hide");
 
   document.querySelector("#welcome_img").classList.add("zoom_out");
@@ -50,22 +50,36 @@ function showProduct(product) {
   console.log("showProduct");
   //fang template
   const template = document.querySelector("#candy_product").content;
+
+  // const templateContent = document.querySelector("#candy_content").content;
   //lav en kopi
   const copy = template.cloneNode(true);
+
+  // const clone = templateContent.cloneNode(true);
   //ændre indhold
   copy.querySelector("h2").textContent = product.name;
 
+  // clone.querySelector("h2").textContent = product.name;
+  // clone.querySelector("h3").textContent = product.brandname;
+  // clone.querySelector(".content").textContent = product.content;
+  // clone.querySelector(".energy").textContent = product.energy;
+  // clone.querySelector(".fat").textContent = product.fat;
+  // clone.querySelector(".saturated").textContent = product.saturatedFat;
+  // clone.querySelector(".carbohydrate").textContent = product.carbohydrate;
+  // clone.querySelector(".sugars").textContent = product.sugars;
+  // clone.querySelector(".protein").textContent = product.protein;
+  // clone.querySelector(".salt").textContent = product.salt;
+
+  copy.querySelector(".more_here").setAttribute("href", `product.html?id=${product.id}`);
+
   //appende
   document.querySelector("#products").appendChild(copy);
-
   document.querySelector("#products").classList.remove("hide");
-
-  // document.querySelectorAll(".plus_minus").forEach(hidePlus);
-  // function hidePlus(hide) {
-  //   hide.classList.add("hide");
-  // }
-
   document.querySelector("#products").classList.add("appear");
+
+  // document.querySelector("#readmore").appendChild(clone);
+
+  // document.querySelector(".more_here").addEventListener("click", fetchContent);
 }
 
 function fetchCandy(evt) {
@@ -110,4 +124,8 @@ function showGummi(product) {
   document.querySelector(`[data-category="skum"]`).addEventListener("click", fetchCandy);
 }
 
+// function fetchContent() {
+//   console.log("fetchContent");
+//   document.querySelector("#readmore").classList.remove("hide");
+// }
 //https://blandselvslik-8d50.restdb.io/rest/blandselvslik?h={%22$fields%22:{%22category%22:1}}
