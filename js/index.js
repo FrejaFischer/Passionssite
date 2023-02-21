@@ -31,7 +31,7 @@ function fetchProducts() {
   fetch("https://blandselvslik-8d50.restdb.io/rest/blandselvslik", {
     method: "get",
     headers: {
-      "x-apikey": "63ecc171478852088da682f2",
+      "x-apikey": "63f4d351478852088da68528",
     },
   })
     .then((e) => e.json())
@@ -74,7 +74,7 @@ function fetchCandy(evt) {
   fetch(`https://blandselvslik-8d50.restdb.io/rest/blandselvslik?q={"category":"${evt.target.dataset.category}"}`, {
     method: "get",
     headers: {
-      "x-apikey": "63ecc171478852088da682f2",
+      "x-apikey": "63f4d351478852088da68528",
     },
   })
     .then((e) => e.json())
