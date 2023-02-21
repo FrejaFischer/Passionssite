@@ -1,25 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Slikfix</title>
+  </head>
+  <body>
+    <header>
+      <!--Her skal der være et logo og en kurv-->
+      <img src="img/logo_TEST.png" alt="logo">
+    </header>
+    <main>
+      <!--Her vises kategorierne-->
+      <section id="categori_section">
+        <div id="categories">
+          <h2 data-category="vingummier">Vingummier</h2>
+          <h2 data-category="surt">Surt slik</h2></a>
+          <h2 data-category="chokolade">Chokolade</h2></a>
+          <h2 data-category="karamel">Karamel</h2></a>
+          <h2 data-category="lakrids">Lakrids</h2></a>
+          <h2 data-category="skum">Skum</h2></a>
+        </div>
+      </section>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="stylesheet" href="css/index.css" />
-  <title>Slikfix</title>
-</head>
+      <div id="welcome_img">
+        <!-- her er velkomstbilledet -->
+      </div>
 
-<body>
-  <header></header>
-  <main></main>
-  <template class="categories">
-    <h2>hej</h2>
-    <p>test</p>
-    <a href="productlist.html" class="category_link">click here</a>
-  </template>
-  <footer></footer>
-  <script src="js/index.js"></script>
-</body>
+      <section id="products">
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <section id="products2">
+        <!--Her skal hvert stykke slik card / .candy_card blive kopiret til-->
+      </section>
+      <section id="readmore">
+        <div><p>indhold</p></div>
+        <!--Her skal slikindholds-vinduet dukke op ved klik på læs mere-->
+      </section>
+    </main>
 
+    <template id="candy_content">
+      <div class="content_window">
+        <!--her er den template hvor slikindholds-vinduet bliver lavet i-->
+      </div>
+    </template>
+
+    <template id="candy_product">
+      <div class="candy_card">
+        <!--her er den template hvor slik card bliver lavet i-->
+        <img src="img/testimg.png" alt="Slik billede" class="candy_img" />
+        <p class="price">
+          35g / 10 stk. <br />
+          6,- DKK
+        </p>
+        <h2>name</h2>
+        <button>Put i Posen</button>
+        <!-- <img src="img/putikurv.png" alt="plus minus" class="plus_minus"> -->
+        <p class="more_here">Læs mere her</p>
+      </div>
+    </template>
+
+    <footer>
+      <section>
+          <div class="footer_grid">
+              <div>
+                  <img src="imgs/slikfix_logo.svg" alt="#">
+              </div>
+              <div class="footer_information">
+                  <h3>Information</h3>
+                  <ul>
+                      <li>Om os</li>
+                      <li>Persondatapolitik</li>
+                      <li>Cookie- og Privatlivspolitik</li>
+                      <li>Handelsbetingelser</li>
+                      <li>Gavekort</li>
+                  </ul>
+              </div>
+
+              <div class="kontakt">
+                  <h3>Kontakt</h3>
+                  <p class="kontaktp"><a href="#">Ønsker til shoppen</a></p>
+                  <div class="adresse">
+                      <p>Guldbergsgade 29N</p>
+                      <p>2200 København N</p>
+                  </div>
+                  <div class="tlf_mail">
+
+                      <p>12 34 56 78</p>
+                      <p>slikfix@slikfix.dk</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="logo_flex">
+              <img class="logo_img" src="imgs/mp.webp" alt="mobilepaylogo">
+              <img class="logo_img" src="imgs/dk.webp" alt="dankort">
+              <img class="logo_img" src="imgs/visa.webp" alt="visa">
+              <img class="logo_img" src="imgs/mc.webp" alt="mastercard">
+          </div>
+      </section>
+
+      <p class="copyp">Copyright © Gruppe 4. Multimediedesign KEA.</p>
+  </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
