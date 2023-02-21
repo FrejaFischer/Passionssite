@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*** Footer ***/
 footer {
   background-color: #ee3e55;
@@ -47,4 +48,178 @@ li {
 .copyp {
   font-size: 0.75rem;
   margin-top: 3rem;
+}
+=======
+body {
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 2%, rgba(255, 191, 192, 1) 31%); */
+  background-color: #ffbfc0;
+}
+
+/* Logo */
+header img {
+  height: 100px;
+}
+
+/* Categories */
+#categories {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 50px;
+}
+
+/* velkommen image*/
+#welcome_img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../img/slikfix_topscroll.webp");
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+}
+
+/* candy card */
+.candy_img {
+  width: 102%;
+  height: 192px;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+  left: 0%;
+  bottom: 24%;
+  border-radius: 100px;
+  grid-row: 1/4;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.price {
+  background-color: #ffbfc0;
+  border-radius: 46px;
+  width: 90px;
+  height: 60px;
+  text-align: center;
+  text-justify: distribute;
+  justify-self: center;
+  margin-top: -30px;
+  margin-bottom: 2px;
+  padding-top: 25px;
+  grid-row: 4/6;
+  justify-self: flex-start;
+  z-index: 1;
+}
+
+/* .candy_card {
+  background-image: url("../img/candycard_TEST.png");
+  position: relative;
+  background-size: cover;
+  width: 50%;
+  margin: 70px;
+  display: grid;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+} */
+
+.candy_card {
+  background-color: #db4d5a;
+  height: 300px;
+  width: 215px;
+  margin: 52px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.candy_card button {
+  background-color: #ffbfc0;
+  grid-row: 7/8;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 77px;
+}
+.candy_card button:hover {
+  color: #ffbfc0;
+  background-image: url("../img/putikurv-TEST.png");
+  background-size: cover;
+  height: 77px;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#products2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.candy_card h2 {
+  font-size: 1em;
+  grid-row: 6/7;
+  justify-self: center;
+  margin-bottom: 25px;
+}
+
+.candy_card h3 {
+  font-size: 1em;
+}
+
+.plus_minus {
+  z-index: 1;
+  /* top: -54px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  justify-self: center;
+  width: 91%;
+  position: relative;
+}
+
+.more_here {
+  grid-row: 8/9;
+  justify-self: end;
+  margin-right: 10px;
+}
+
+/* -------Animationer------------ */
+.zoom_out {
+  animation-name: zoom_out;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+@keyframes zoom_out {
+  0% {
+    translate: 0% 0%;
+    scale: 1;
+    opacity: 100px;
+  }
+  100% {
+    translate: -70% -70%;
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.appear {
+  animation-name: appear;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100px;
+  }
+>>>>>>> 272f8b88c74b36e46fed83296cf9596d450be9fd
 }
