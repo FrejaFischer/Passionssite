@@ -1,0 +1,50 @@
+/*** Footer ***/
+footer {
+  background-color: #ee3e55;
+  color: #ffbcbf;
+  text-align: left;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
+footer h3 {
+  font-size: 1.5rem;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 2rem;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+li {
+  color: #ffbcbf;
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 2rem;
+}
+
+.kontaktp {
+  color: #ffbcbf;
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 2rem;
+}
+
+.logo_flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo_img {
+  width: 5%;
+  height: auto;
+}
+
+.copyp {
+  font-size: 0.75rem;
+  margin-top: 3rem;
+}
