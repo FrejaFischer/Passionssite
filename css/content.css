@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffbfc0;
 }
@@ -7,9 +13,21 @@ body {
   justify-content: center;
 }
 
-/* Logo */
-header img {
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  align-self: center;
+  margin-right: 5%;
+}
+#logo_img {
   height: 100px;
+  margin-left: 8%;
+}
+#kurven {
+  width: 50px;
 }
 /* -------Content window--------------- */
 .content_window {
