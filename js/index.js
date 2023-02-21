@@ -7,6 +7,7 @@ function slikfixVelkommen() {
   document.querySelector("#categori_section").classList.add("hide");
   document.querySelector("#products").classList.add("hide");
   document.querySelector("#readmore").classList.add("hide");
+  document.querySelector("footer").classList.add("hide");
 
   document.querySelector("#welcome_img").classList.add("zoom_out");
 
@@ -23,6 +24,7 @@ function slikfixVelkommen() {
 function fetchProducts() {
   document.querySelector("#welcome_img").classList.add("hide");
   document.querySelector("header").classList.remove("hide");
+  document.querySelector("footer").classList.remove("hide");
   document.querySelector("#categori_section").classList.remove("hide");
   document.querySelector("#categori_section").classList.add("appear");
 

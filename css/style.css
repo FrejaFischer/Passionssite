@@ -1,6 +1,4 @@
 body {
-  /* background: rgb(255, 255, 255);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 2%, rgba(255, 191, 192, 1) 31%); */
   background-color: #ffbfc0;
 }
 
@@ -83,9 +81,13 @@ header img {
   margin-left: 10px;
   margin-right: 10px;
   height: 77px;
+  border-style: double;
+  border-inline-color: #ee3e55;
+  border-block-color: #ee3e55;
+  border-width: thick;
 }
 .candy_card button:hover {
-  color: #ffbfc0;
+  color: transparent;
   background-image: url("../img/putikurv-TEST.png");
   background-size: cover;
   height: 77px;
@@ -167,7 +169,7 @@ header img {
   }
 }
 
-/*** Footer ***/
+/* -------Footer--------------- */
 footer {
   background-color: #ee3e55;
   color: #ffbcbf;
