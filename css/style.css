@@ -17,7 +17,11 @@ header img {
 }
 #categories button {
   background-color: #ee3e55;
-  border-radius: 100px;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 69px;
+  width: 130px;
   border-style: none;
 }
 #categories button:hover {
@@ -36,6 +40,16 @@ header img {
 }
 
 /* candy card */
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#products2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .candy_img {
   width: 102%;
   height: 192px;
@@ -51,6 +65,7 @@ header img {
 }
 
 .price {
+  color: white;
   background-color: #ffbfc0;
   border-radius: 46px;
   width: 90px;
@@ -75,7 +90,16 @@ header img {
   grid-template-rows: repeat(8, 1fr);
 }
 
-.candy_card button {
+.candy_card h2 {
+  font-size: 1em;
+  grid-row: 6/7;
+  justify-self: center;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.add_button {
+  color: white;
   background-color: #ffbfc0;
   grid-row: 7/8;
   margin-left: 10px;
@@ -86,47 +110,35 @@ header img {
   border-block-color: #ee3e55;
   border-width: thick;
 }
-.candy_card button:hover {
+.add_button:hover {
   color: transparent;
   background-image: url("../img/putikurv-TEST.png");
   background-size: cover;
   height: 77px;
 }
 
-#products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-#products2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.candy_card h2 {
-  font-size: 1em;
-  grid-row: 6/7;
-  justify-self: center;
-  margin-bottom: 25px;
-}
-
-.candy_card h3 {
-  font-size: 1em;
-}
-
-.plus_minus {
+/* .plus_minus {
   z-index: 1;
-  /* top: -54px; */
   margin-left: 10px;
   margin-right: 10px;
   justify-self: center;
   width: 91%;
   position: relative;
-}
+} */
 
 .more_here {
+  background-color: transparent;
+  border-style: none;
   grid-row: 8/9;
   justify-self: end;
+  margin-top: 15px;
   margin-right: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+.more_here:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 /* -------Animationer------------ */
