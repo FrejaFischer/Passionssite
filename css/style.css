@@ -17,6 +17,14 @@ header img {
   margin-right: 10%;
   margin-bottom: 50px;
 }
+#categories button {
+  background-color: #ee3e55;
+  border-radius: 100px;
+  border-style: none;
+}
+#categories button:hover {
+  scale: 1.05;
+}
 
 /* velkommen image*/
 #welcome_img {
@@ -60,20 +68,8 @@ header img {
   z-index: 1;
 }
 
-/* .candy_card {
-  background-image: url("../img/candycard_TEST.png");
-  position: relative;
-  background-size: cover;
-  width: 50%;
-  margin: 70px;
-  display: grid;
-  align-self: center;
-  justify-self: center;
-  justify-items: center;
-} */
-
 .candy_card {
-  background-color: #db4d5a;
+  background-color: #ee3e55;
   height: 300px;
   width: 215px;
   margin: 52px;
