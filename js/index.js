@@ -52,6 +52,7 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("h2").textContent = product.name;
+  copy.querySelector("img").setAttribute("src", `imgs/${product.img}`);
 
   copy.querySelector(".more_here").setAttribute("href", `product.html?id=${product.id}`);
 
@@ -94,6 +95,7 @@ function showGummi(product) {
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("h2").textContent = product.name;
+  copy.querySelector("img").setAttribute("src", `imgs/${product.img}`);
 
   copy.querySelector(".more_here").setAttribute("href", `product.html?id=${product.id}`);
 

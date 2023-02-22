@@ -23,6 +23,7 @@ function showProduct(product) {
   //lav en kopi
   const clone = templateContent.cloneNode(true);
   //ændre indhold
+  clone.querySelector("img").setAttribute("src", `imgs/${product.img}`);
   clone.querySelector("h2").textContent = product.name;
   clone.querySelector("h3").textContent = product.brandname;
   clone.querySelector(".content").textContent = product.content;
