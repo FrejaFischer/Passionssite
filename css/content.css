@@ -8,6 +8,26 @@ body {
   background-color: #ffbfc0;
 }
 
+@font-face {
+  font-family: "Montserrat_tekst";
+  src: url("../font/Montserrat/static/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat_overskrift";
+  src: url("../font/Montserrat/static/Montserrat-Medium.ttf");
+}
+
+p,
+a {
+  font-family: "Montserrat_tekst";
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Montserrat_overskrift";
+}
+
 #readmore {
   display: grid;
   justify-content: center;
